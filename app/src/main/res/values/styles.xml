@@ -13,4 +13,6 @@
         <item name="colorPrimaryDark">#00c8ff</item>
     </style>
 
+    <style name="Theme.AppCompat.DayNight.NoActionBar"/>
+
 </resources>
