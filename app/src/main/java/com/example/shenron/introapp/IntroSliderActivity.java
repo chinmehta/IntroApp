@@ -1,6 +1,8 @@
 package com.example.shenron.introapp;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.support.annotation.ColorInt;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
@@ -11,6 +13,7 @@ import android.view.WindowManager;
 import com.github.paolorotolo.appintro.AppIntro;
 import com.github.paolorotolo.appintro.AppIntro2;
 import com.github.paolorotolo.appintro.AppIntroFragment;
+import com.github.paolorotolo.appintro.ISlideBackgroundColorHolder;
 
 public class IntroSliderActivity extends AppIntro2 {
 
@@ -33,6 +36,7 @@ public class IntroSliderActivity extends AppIntro2 {
 
         addSlide(AppIntroFragment.newInstance("Slide 4", "Description 4",
                 R.drawable.slider_four, ContextCompat.getColor(getApplicationContext(), R.color.slide_four)));
+        setFlowAnimation();
 
 
     }
@@ -51,5 +55,7 @@ public class IntroSliderActivity extends AppIntro2 {
         finish();
         startActivity(new Intent(this,MainActivity.class));
     }
+
+
 
 }
